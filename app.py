@@ -45,7 +45,7 @@ def index():
     if request.method == 'POST':
         movie_name = request.form['movie_name']  # Get the movie name from the form
         recommended_movies = content_recommender(movie_name)  # Call your function to get the recommended movies
-        return render_template('result.html', movies=recommended_movies)
+        return render_template('result.html', books=recommended_movies)
     return render_template('index.html')
 
 
